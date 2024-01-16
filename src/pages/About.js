@@ -1,12 +1,19 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
+import {useProductContext } from "../context/productcontext";
 
 const About = () => {
+  const myName = useProductContext();
   const data = {
     name: "Ecom Store",
   };
 
-  return <HeroSection myData={data} />;
+  return (
+    <>
+      {myName.myName}
+      <HeroSection myData={data} />
+    </>
+  );
 };
 
 export default About;
