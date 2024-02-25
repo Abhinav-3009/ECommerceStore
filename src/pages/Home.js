@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import Trusted from "../components/Trusted";
 import FeatureProduct from "../components/FeatureProduct";
 
+//this is the home page of ecommerce application
 const Home = () => {
   const data = {
     name: "E-Commerce store",
